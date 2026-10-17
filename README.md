@@ -23,7 +23,18 @@ Use `npm ci` for repeatable installs from the committed lockfile. The project’
 
 ## Deploy on Vercel
 
-Import this GitHub repository into Vercel and choose the Next.js preset. Use the repository root as the root directory and the default build command (`npm run build`). No environment variables or backend services are required.
+Import this GitHub repository into Vercel. Use the repository root (the folder containing `package.json` and `vercel.json`) as the Root Directory. No environment variables or backend services are required.
+
+The checked-in `vercel.json` explicitly selects the Next.js framework, installs with `npm ci`, builds with `npm run build`, and sets the output directory to `.next`.
+
+If an existing project reports `STATIC_BUILD_NO_OUT_DIR` and asks for a `public` folder, check **Settings → Build and Deployment**:
+
+- Framework Preset: **Next.js**
+- Root Directory: repository root (leave blank)
+- Build Command: `npm run build`
+- Output Directory: clear any `public` override and use the Next.js default (`.next`)
+
+Redeploy the latest `main` commit after saving the settings. `public` is for optional source assets, such as future photos and worksheets; it is not the compiled website output.
 
 ## Update content
 
