@@ -1,4 +1,43 @@
-# dhcs-bakeoff-1
-# dhcs-bakeoff-1
-# financial-literacy-1
-# financial-literacy-1
+# Financial Literacy for Kids
+
+A website for Alex Lam’s student-led financial literacy program in Dublin, California. Built with Next.js App Router, TypeScript, and Tailwind CSS. Seven pages, no database, no tracking, and no external image or font services.
+
+## Run locally
+
+Use Node.js 20.9 or newer (Node 24 was used during development).
+
+```sh
+npm install
+npm run dev
+```
+
+The development server runs on port 3000. For a production build:
+
+```sh
+npm run typecheck
+npm run build
+npm start
+```
+
+Use `npm ci` for repeatable installs from the committed lockfile. The project’s `.npmrc` keeps the npm cache in the ignored `.npm-cache` folder so installation also works in restricted cloud workspaces.
+
+## Deploy on Vercel
+
+Import this GitHub repository into Vercel and choose the Next.js preset. Use the repository root as the root directory and the default build command (`npm run build`). No environment variables or backend services are required.
+
+## Update content
+
+- Page content lives in `src/app/`, with one directory per route.
+- Shared contact details, navigation, teaching topics, resource entries, and approved photo placeholders are in `src/lib/site.ts`.
+- Shared UI lives in `src/components/`. Styles and Tailwind’s theme are in `src/app/globals.css`.
+- To add real resources, put files in `public/resources/`, set the entry’s `href`, and change its status to `Available`. Check the link before publishing.
+- To add photos, place your own images in `public/images/` and fill in the relevant photo entry with a local path, meaningful alt text, and an optional caption. Founder, fundraiser, workshop, and teaching material slots are labeled in code. Obtain permission before using identifiable photos of children. No stock photos are included.
+- Update progress only after workshops are completed. The existing $8,000+ figure refers to fundraiser proceeds, not workshop reach. No school or city endorsements are claimed.
+
+## Inquiry form
+
+Email is the primary contact method. The form validates required fields and opens a `mailto:` draft in the visitor’s email app. It does **not** transmit or store inquiries and never claims a message was delivered. After preparing a draft, visitors can also copy its contents and send it manually. A configured email app is needed for `mailto:` links to open directly.
+
+## Visual approach
+
+Warm off-white, navy, muted green, simple rules, and system typography. The home-page activity illustration is original HTML/SVG and is labeled as an example. There are no testimonials, partner logos, fictional statistics, or photos of children.
