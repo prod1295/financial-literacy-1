@@ -6,13 +6,10 @@ export const site = {
 };
 
 export const navigation = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
   { label: "Workshops", href: "/workshops" },
-  { label: "What We Teach", href: "/what-we-teach" },
   { label: "Our Story", href: "/our-story" },
   { label: "Resources", href: "/resources" },
-  { label: "Partner With Us", href: "/partner-with-us" },
+  { label: "Ask about a workshop", href: "/partner-with-us" },
 ];
 
 export const topics = [
@@ -44,51 +41,16 @@ export const topics = [
       "If you buy something today, what might you have to wait to buy later?",
   },
   {
-    title: "Banking Basics",
+    title: "Borrowing & Credit",
     description:
-      "A simple introduction to bank accounts, deposits, and keeping money safe.",
-    example: "What happens when you put money into a bank account?",
+      "What it means to borrow money and why borrowed money needs to be repaid.",
+    example: "What should you think about before borrowing money?",
   },
   {
-    title: "Making Smart Choices",
+    title: "Introductory Investing",
     description:
-      "Using everyday situations to practice financial decision-making.",
-    example:
-      "Two things you want cost different amounts. How would you decide what to do?",
-  },
-];
-
-// Publish a real resource by adding its file to public/resources/, setting href,
-// and changing status to "Available". Never link to a file before it exists.
-export const resources: {
-  title: string;
-  description: string;
-  status: "Coming Soon" | "Available";
-  href: string | null;
-}[] = [
-  {
-    title: "Budgeting Worksheet",
-    description: "Practice making a plan for a small amount of money.",
-    status: "Coming Soon",
-    href: null,
-  },
-  {
-    title: "Needs vs. Wants Activity",
-    description: "Sort everyday items and talk about the choices.",
-    status: "Coming Soon",
-    href: null,
-  },
-  {
-    title: "Saving Challenge",
-    description: "Set a small goal and keep track of progress.",
-    status: "Coming Soon",
-    href: null,
-  },
-  {
-    title: "Money Vocabulary Guide",
-    description: "Simple explanations of everyday money words.",
-    status: "Coming Soon",
-    href: null,
+      "An introduction to investing, time, and the risk that investments can lose value.",
+    example: "Why does starting earlier give an investment more time to grow?",
   },
 ];
 

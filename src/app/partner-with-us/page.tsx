@@ -3,7 +3,7 @@ import { InquiryForm } from "@/components/inquiry-form";
 import { EmailLink, PageIntro } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Partner With Us",
+  title: "Ask about a workshop",
   description:
     "Contact Alex Lam about hosting a free financial literacy workshop for your elementary school, after-school program, library, or community center.",
 };
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function PartnerWithUs() {
   return (
     <>
-      <PageIntro eyebrow="Let’s plan a workshop" title="Partner With Us">
+      <PageIntro eyebrow="Let’s plan a workshop" title="Ask about a workshop">
         <p>
           If you work with elementary-age students and are interested in hosting
           a free financial literacy workshop, feel free to reach out.
@@ -39,7 +39,7 @@ export default function PartnerWithUs() {
                 Workshops are free and designed mainly for grades 3–5. Other
                 elementary grade levels can be accommodated.
               </p>
-              <p>In-person sessions depend on location and scheduling.</p>
+              <p>Sessions are online. Get in touch to discuss scheduling.</p>
             </div>
           </aside>
           <InquiryForm />

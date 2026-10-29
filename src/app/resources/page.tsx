@@ -1,45 +1,31 @@
-import type { Metadata } from "next";
-import { Arrow, PageIntro, TextLink } from "@/components/ui";
-import { resources } from "@/lib/site";
-
-export const metadata: Metadata = {
+import { PageIntro, EmailLink } from "@/components/ui";
+import { WorkshopExample } from "@/components/workshop-example";
+export const metadata = {
   title: "Resources",
   description:
-    "Planned financial literacy worksheets and activities for elementary students. Resources are coming soon; no downloads are available yet.",
+    "Practice making and adjusting a spending plan with a simple $20 activity.",
 };
-
 export default function Resources() {
   return (
     <>
-      <PageIntro eyebrow="For a little extra practice" title="Resources">
+      <PageIntro eyebrow="Practice together" title="A plan for $20.">
         <p>
-          Worksheets and activities are on the way. We’ll add them here when
-          they’re ready.
+          Use this example to start a conversation about needs, wants, and
+          saving.
         </p>
       </PageIntro>
       <section className="section">
-        <div className="container resources-container">
-          <ul className="resource-list">
-            {resources.map((resource) => (
-              <li key={resource.title}>
-                <div>
-                  <h2>{resource.title}</h2>
-                  <p>{resource.description}</p>
-                </div>
-                {resource.status === "Available" && resource.href ? (
-                  <a className="text-link" href={resource.href} download>
-                    Download
-                    <Arrow />
-                  </a>
-                ) : (
-                  <span className="resource-status">Coming Soon</span>
-                )}
-              </li>
-            ))}
-          </ul>
-          <div className="resource-note">
-            <p>There are no downloadable files available yet.</p>
-            <TextLink href="/what-we-teach">See the topics we cover</TextLink>
+        <div className="container">
+          <WorkshopExample />
+          <div className="narrow resource-note">
+            <h2>Talk through your choices.</h2>
+            <p>
+              Which expenses would you keep? Where could you spend less? There
+              can be more than one reasonable answer.
+            </p>
+            <p>
+              For questions about lesson materials, email <EmailLink />.
+            </p>
           </div>
         </div>
       </section>

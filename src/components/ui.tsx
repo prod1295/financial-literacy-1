@@ -64,13 +64,17 @@ export function HostInvitation() {
       <div className="container invitation-inner">
         <div>
           <p className="eyebrow">Schools · Libraries · Community programs</p>
-          <h2>Interested in hosting a workshop?</h2>
+          <h2>Ask about a workshop.</h2>
           <p>
-            Let’s talk about your students, your space, and a time that works.
+            Parents, teachers, and community programs are welcome to get in
+            touch.
           </p>
         </div>
-        <Link className="button button-primary" href="/partner-with-us">
-          Partner With Us
+        <Link
+          className="button button-primary"
+          href="mailto:lam.alex5420@gmail.com"
+        >
+          Ask about a workshop
           <Arrow />
         </Link>
       </div>

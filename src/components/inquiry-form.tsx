@@ -36,7 +36,7 @@ export function InquiryForm() {
     // has no mail handler. A blocked external window still leaves the draft.
     // Nothing is transmitted by this website.
     window.open(
-      `mailto:${site.email}?subject=${encodeURIComponent("Workshop inquiry — Financial Literacy for Kids")}&body=${encodeURIComponent(body)}`,
+      `mailto:${site.email}?subject=${encodeURIComponent("Workshop inquiry: Financial Literacy for Kids")}&body=${encodeURIComponent(body)}`,
       "_blank",
       "noopener,noreferrer",
     );

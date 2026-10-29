@@ -44,7 +44,7 @@ export default function Workshops() {
     <>
       <PageIntro
         eyebrow="For schools & community programs"
-        title="Free Financial Literacy Workshops"
+        title="Free online workshops"
       >
         <p>
           Simple examples, plenty of conversation, and time to try things out.
@@ -67,7 +67,7 @@ export default function Workshops() {
             </div>
             <div>
               <span>Format</span>
-              <strong>Interactive</strong>
+              <strong>Online</strong>
             </div>
           </div>
           <div className="editorial-split workshop-details">
@@ -85,9 +85,8 @@ export default function Workshops() {
                 community centers.
               </p>
               <p>
-                Workshops can be conducted in person depending on location and
-                scheduling. We’re currently working with local after-school
-                programs in Dublin to organize sessions.
+                I have completed 2 online workshops and taught 53 students.
+                Contact me to discuss a session for your group.
               </p>
             </div>
           </div>

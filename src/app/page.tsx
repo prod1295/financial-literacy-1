@@ -1,102 +1,82 @@
 import Link from "next/link";
 import { WorkshopExample } from "@/components/workshop-example";
-import { Arrow, HostInvitation, TextLink } from "@/components/ui";
 import { Impact } from "@/components/impact";
-import { topics } from "@/lib/site";
-
+import { Story, LessonNote, Support } from "@/components/story";
+import { HostInvitation } from "@/components/ui";
 export default function Home() {
   return (
     <>
       <section className="home-hero">
-        <div className="container hero-grid">
-          <div className="hero-copy">
-            <p className="eyebrow location-label">
-              <span aria-hidden="true" />
-              Student-led · Dublin, California
-            </p>
-            <h1>
-              Financial Literacy
-              <br />
-              <em>for Kids</em>
-            </h1>
-            <p className="hero-subtitle">
-              Free financial literacy workshops for elementary school students
-              in the Dublin area.
-            </p>
-            <p className="hero-description">
-              We teach students the basics of saving, budgeting, needs vs.
-              wants, and responsible spending through simple examples and
-              interactive activities.
-            </p>
-            <div className="hero-actions">
-              <Link className="button button-primary" href="/workshops">
-                Learn About Our Workshops
-                <Arrow />
-              </Link>
-              <Link className="button button-secondary" href="/partner-with-us">
-                Partner With Us
-              </Link>
-            </div>
-            <p className="hero-footnote">
-              Designed mainly for grades 3–5. Always free.
-            </p>
-          </div>
-          <WorkshopExample />
-        </div>
-      </section>
-      <section className="section what-we-do">
-        <div className="container editorial-split">
-          <div>
-            <p className="eyebrow">Small lessons, practical skills</p>
-            <h2>What We Do</h2>
-          </div>
-          <div>
-            <p className="section-lead">
-              We introduce kids to money through questions they can understand
-              and choices they can talk through.
-            </p>
-            <p>
-              Our free, 30–45 minute workshops use everyday examples and
-              interactive activities. We’re planning sessions for elementary
-              schools, after-school programs, libraries, and community centers.
-            </p>
-            <TextLink href="/about">Get to know the program</TextLink>
-          </div>
-        </div>
-      </section>
-      <section className="status-section">
-        <div className="container status-inner">
-          <div className="status-heading">
-            <span className="status-dot" aria-hidden="true" />
-            <h2>What We’re Working On</h2>
-          </div>
-          <p>
-            We’re currently working with local after-school programs in Dublin
-            to bring free financial literacy workshops to elementary students.
-          </p>
-        </div>
-      </section>
-      <section className="section home-topics">
         <div className="container">
-          <div className="section-top">
-            <div>
-              <p className="eyebrow">The starting points</p>
-              <h2>What We Teach</h2>
-            </div>
-            <TextLink href="/what-we-teach">Explore all six topics</TextLink>
-          </div>
-          <div className="topic-preview">
-            {topics.slice(0, 3).map((topic, index) => (
-              <div key={topic.title}>
-                <span className="topic-number">0{index + 1}</span>
-                <h3>{topic.title}</h3>
-                <p>{topic.description}</p>
-              </div>
-            ))}
+          <p className="eyebrow">Financial Literacy for Kids</p>
+          <h1>
+            Money lessons for
+            <br />
+            everyday life.
+          </h1>
+          <p className="hero-subtitle">
+            Free online financial literacy workshops for elementary students,
+            led by Alex Lam in Dublin, California.
+          </p>
+          <div className="hero-actions">
+            <Link className="button button-primary" href="#workshop">
+              Explore the workshop
+            </Link>
+            <Link className="secondary-link" href="/partner-with-us">
+              Ask about a session
+            </Link>
           </div>
         </div>
       </section>
-      <Impact showStoryLink />
+      <section className="workshop-band" id="workshop">
+        <div className="container">
+          <WorkshopExample />
+          <div className="workshop-caption">
+            <h2>A look inside the workshop</h2>
+            <p>
+              Students make a spending plan, compare different choices, and
+              adjust when an unexpected expense comes up.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="container narrow">
+          <p className="eyebrow">What we have done</p>
+          <Impact />
+          <p>
+            Workshops cover saving, budgeting, needs versus wants, responsible
+            spending, borrowing and credit, and introductory investing. Students
+            work through examples and questions they can discuss.
+          </p>
+          <p>The current teaching materials mainly suit grades 3–5.</p>
+          <Link className="text-link" href="/workshops">
+            More about the workshops
+          </Link>
+        </div>
+      </section>
+      <section className="section story-section" id="story">
+        <div className="container narrow">
+          <p className="eyebrow">My story</p>
+          <h2>It started with my family.</h2>
+          <Story />
+          <LessonNote />
+          <Support />
+        </div>
+      </section>
+      <section className="section">
+        <div className="container narrow">
+          <p className="eyebrow">Useful resources</p>
+          <h2>Keep the conversation going.</h2>
+          <p>
+            Try talking through a spending plan together. What would you save?
+            What would you change if an unexpected expense came up?
+          </p>
+          <Link className="text-link" href="/resources">
+            Explore the practice activity
+          </Link>
+        </div>
+      </section>
       <HostInvitation />
     </>
   );
