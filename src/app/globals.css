@@ -833,3 +833,7 @@ textarea::placeholder {
   }
 }
 .navigation .nav-contact[aria-current="page"] { color: #fff; }
+.real-slide { max-width: 960px; margin: auto; }
+.real-slide img { display: block; width: 100%; height: auto; border-radius: 3px; }
+.real-slide figcaption { color: #e6eee8; font-size: 13px; padding-top: 14px; }
+.section .real-slide figcaption { color: var(--muted); }

@@ -69,11 +69,10 @@ export default function Home() {
           <p className="eyebrow">Useful resources</p>
           <h2>Keep the conversation going.</h2>
           <p>
-            Try talking through a spending plan together. What would you save?
-            What would you change if an unexpected expense came up?
+            Preview the budgeting activity and download the full online workshop slideshow.
           </p>
           <Link className="text-link" href="/resources">
-            Explore the practice activity
+            Explore the workshop slides
           </Link>
         </div>
       </section>

@@ -41,7 +41,7 @@ Redeploy the latest `main` commit after saving the settings. `public` is for opt
 - Page content lives in `src/app/`, with one directory per route.
 - Shared contact details, navigation, teaching topics, resource entries, and approved photo placeholders are in `src/lib/site.ts`.
 - Shared UI lives in `src/components/`. Styles and Tailwind’s theme are in `src/app/globals.css`.
-- To add real resources, put the supplied PowerPoint files in `public/resources/` and add descriptive download links with PPTX labels to the resources page. Preserve hypothetical investment assumptions in previews. Check each link before publishing.
+- The supplied online workshop slideshow is in `public/resources/`, with its budgeting slide preview in `public/images/`. The twenty-versus-forty deck has not been supplied; preserve its hypothetical investment assumptions when adding it later.
 - To add photos, place your own images in `public/images/` and fill in the relevant photo entry with a local path, meaningful alt text, and an optional caption. Founder, fundraiser, workshop, and teaching material slots are labeled in code. Obtain permission before using identifiable photos of children. No stock photos are included.
 - Confirmed progress: 2 online workshops and 53 students taught. Alex raised more than $8,000 through his Can Am San Jose badminton tournament to support the program. Do not infer event responsibilities or spending. No school or city endorsements are claimed.
 
@@ -51,4 +51,4 @@ Email is the primary contact method. The form validates required fields and open
 
 ## Visual approach
 
-Near-white, near-black, dark green, and a single system sans-serif family. The centered hero leads into an explicitly labeled HTML example of a $20 budgeting activity. There are no testimonials, partner logos, or staged photos. The requested slideshow files were not supplied; add verified files before publishing download links.
+Near-white, near-black, dark green, and a single system sans-serif family. The centered hero leads into a real slide from the supplied workshop deck. There are no testimonials, partner logos, or staged photos.
