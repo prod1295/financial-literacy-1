@@ -41,7 +41,7 @@ Redeploy the latest `main` commit after saving the settings. `public` is for opt
 - Page content lives in `src/app/`, with one directory per route.
 - Shared contact details, navigation, teaching topics, resource entries, and approved photo placeholders are in `src/lib/site.ts`.
 - Shared UI lives in `src/components/`. Styles and Tailwind’s theme are in `src/app/globals.css`.
-- The supplied online workshop slideshow is in `public/resources/`, with its budgeting slide preview in `public/images/`. The twenty-versus-forty deck has not been supplied; preserve its hypothetical investment assumptions when adding it later.
+- Both supplied PowerPoint files are in `public/resources/`, with slide previews in `public/images/`. The twenty-versus-forty comparison uses a hypothetical 5% yearly return and omits fees, taxes, and inflation; keep those assumptions visible whenever reusing it.
 - To add photos, place your own images in `public/images/` and fill in the relevant photo entry with a local path, meaningful alt text, and an optional caption. Founder, fundraiser, workshop, and teaching material slots are labeled in code. Obtain permission before using identifiable photos of children. No stock photos are included.
 - Confirmed progress: 2 online workshops and 53 students taught. Alex raised more than $8,000 through his Can Am San Jose badminton tournament to support the program. Do not infer event responsibilities or spending. No school or city endorsements are claimed.
 

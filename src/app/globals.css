@@ -837,3 +837,6 @@ textarea::placeholder {
 .real-slide img { display: block; width: 100%; height: auto; border-radius: 3px; }
 .real-slide figcaption { color: #e6eee8; font-size: 13px; padding-top: 14px; }
 .section .real-slide figcaption { color: var(--muted); }
+.resource-second { border-top: 1px solid var(--rule); }
+.slide-resource { margin-top: 35px; }
+.resource-second .resource-note strong { color: var(--ink); }
